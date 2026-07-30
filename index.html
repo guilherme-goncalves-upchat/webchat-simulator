@@ -35,13 +35,14 @@
     <h1>Simulação de atendimento WebChat</h1>
 
     <script type="module">
-        (function(d) {
-            window.omniChatQueueId = 85;
-            window.omniChatDomain = 'testesup.atenderbem.com';
-            var s = d.createElement('script');s.async = true;
-            s.src = 'https://wc.a-tend.online/omnichat.min.js';
-            (d.head || d.body).appendChild(s);
-        })(document);
+    (function(d) {
+        window.omniChatQueueId = 85;
+        window.omniChatDomain = 'testesup.atenderbem.com';
+        var s = d.createElement('script');s.async = true;
+        s.src = 'https://wc.a-tend.online/omnichat.min.js';
+        (d.head || d.body).appendChild(s);
+        window.omnichat.initialize();
+    })(document);
     </script>
 </body>
 </html>   
